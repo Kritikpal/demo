@@ -5,9 +5,9 @@ import html_to_pdf from "html-pdf-node";
 import { AppError } from "../utills/AppError.js";
 
 
-const filePath = path.resolve("private/documents/KycPdf.html");
+const filePath = path.resolve("private/documents/KycPdf.ejs");
 const lastfilePath = path.resolve(
-  "private/documents/pdf.html"
+  "private/documents/pdf.ejs"
 );
 export const generateKycPdf = async (data = {}) => {
   try {
